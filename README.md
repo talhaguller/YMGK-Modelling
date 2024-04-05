@@ -1,47 +1,38 @@
-# Bernoulli Harita Fizibilite Raporu
-## Giriş:
+# Kaostatik Bernoulli Haritası Raporu
+## Giriş
 
-Bu rapor, Bernoulli Haritanın fizibilitesini, yani gerçek dünya uygulamalarında kullanışlılığını incelemektedir. Bernoulli Harita, bir parametreye (p) bağlı olan iki boyutlu bir kaotik haritadır. Karmaşık ve kaotik davranışlar sergileyebilme özelliği sayesinde çeşitli alanlarda kullanılabilir.
+Kaostatik Bernoulli haritası, kaotik dinamik sistemler alanında önemli bir yere sahip olan basit bir ayrık zamanlı haritadır. Bu harita, basit doğrusal bir dönüşüm uygulayarak kaotik davranış sergiler. Bu raporda, Kaostatik Bernoulli haritasının özelliklerini, davranışlarını ve uygulamalarını inceleyeceğiz.
 
-## Fizibilite Değerlendirmesi:
+## Tanım
 
-### Avantajlar:
+Kaostatik Bernoulli haritası, [0, 1] aralığındaki gerçel sayıları [0, 1] aralığına dönüştüren bir fonksiyondur. Aşağıdaki denklemle tanımlanır:
 
-Basit bir deterministik denklemle tanımlanır.
-Karmaşık ve kaotik davranışlar sergileyebilir.
-Uzun vadeli tahminleri zordur.
-Başlangıç ​​koşullarına karşı hassastır.
+x_(n+1) = { 2 * x_n  if 0 <= x_n < 1/2
+           1 - 2 * (x_n - 1/2)  if 1/2 <= x_n <= 1 }
+Burada, x_n n. iterasyondaki girişi ve x_(n+1) (n+1). iterasyondaki çıktıyı temsil eder.
 
-### Dezavantajlar:
+## Özellikleri
 
-Karmaşık ve kaotik davranışı nedeniyle analiz edilmesi ve kontrol edilmesi zor olabilir.
-Belirli parametre değerleri için istenmeyen davranışlar sergileyebilir.
-Uygulama Alanları:
+Kaostatik Bernoulli haritasının önemli özellikleri şunlardır:
 
-### Kriptografi:
+Ergodisite: Harita, başlangıç değerinden bağımsız olarak uzun vadede [0, 1] aralığının tüm noktalarını ziyaret eder.
+Duyarlılık terhadap başlangıç koşulları: Başlangıç değerlerindeki küçük değişiklikler bile uzun vadede büyük farklılıklara yol açar. Bu özellik, kaotik sistemlerin ayırt edici özelliğidir.
+Periyodik olmayan: Harita, belli bir periyotla aynı noktaya dönmez.
+Karmaşık davranış: Basit bir denkleme sahip olmasına rağmen, karmaşık ve öngörülemez davranış sergiler.
+Davranış
 
-Bernoulli Harita, karmaşık ve kaotik davranışı nedeniyle kriptografik sistemlerde anahtar üretmek için kullanılabilir.
+Kaostatik Bernoulli haritasının davranışı, başlangıç değerine bağlı olarak değişir.
 
-### Güvenli İletişim:
+0 < x_0 < 1/2: Bu aralıktaki başlangıç değerleri için, x_n değerleri her iterasyonda iki katına çıkar ve sonunda 1'e yaklaşır.
+1/2 <= x_0 <= 1: Bu aralıktaki başlangıç değerleri için, x_n değerleri her iterasyonda 1'den uzaklaşır ve sonunda 0'a yaklaşır.
+Uygulamalar
 
-Bernoulli Harita, karmaşık ve kaotik davranışı nedeniyle sinyalleri gizlemek için kullanılabilir.
+Kaostatik Bernoulli haritası, çeşitli alanlarda uygulamalara sahiptir:
 
-### Görüntü İşleme:
+Kriptografi: Karmaşık davranışı nedeniyle, kriptografik sistemlerde güvenli anahtar üretimi için kullanılabilir.
+Rastgele sayı üretme: Kaotik davranışı, gerçek rastgele sayı üretmek için kullanılabilir.
+** sinyal işleme:** Karmaşık sinyalleri analiz etmek için kullanılabilir.
+Doğal olayların modellenmesi: Bazı doğal olayların kaotik davranışını modellemek için kullanılabilir.
+Sonuç
 
-Bernoulli Harita, görüntülerdeki dokuları ve desenleri analiz etmek için kullanılabilir.
-
-### Optimizasyon:
-
-Bernoulli Harita, karmaşık problemleri optimize etmek için kullanılabilir.
-
-### Rastgele Sayı Üretme:
-
-Bernoulli Harita, rastgele sayılar üretmek için kullanılabilir.
-
-### Modelleme ve Simülasyon:
-
-Bernoulli Harita, kaotik sistemleri modellemek ve simüle etmek için kullanılabilir.
-
-### Fizibilite Sonucu:
-
-Bernoulli Harita, çeşitli alanlarda kullanılabilecek potansiyele sahip bir kaotik haritadır. Karmaşık ve kaotik davranışı, hem avantajlar hem de dezavantajlar sunmaktadır. Kullanımının fizibilitesi, belirli uygulamaya ve parametre değerlerine bağlı olacaktır.
+Kaostatik Bernoulli haritası, basit bir denkleme sahip olmasına rağmen zengin ve karmaşık davranış sergileyen bir kaotik sistemdir. Bu özellikleri nedeniyle, çeşitli bilimsel ve mühendislik alanlarında uygulamalara sahiptir.
