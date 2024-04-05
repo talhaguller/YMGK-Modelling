@@ -20,6 +20,6 @@ def plot_bernoulli_map(r, iterations=1000):
     plt.show()
 
 # Harita için r değerini seçin (0 ile 4 arasında bir değer olmalı)
-r = 3.6
+r = 4.6
 
 plot_bernoulli_map(r)
